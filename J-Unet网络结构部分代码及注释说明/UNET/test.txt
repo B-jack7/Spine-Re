@@ -1,0 +1,1 @@
+epoch=7,test_acc :0.95329 ,test_miou:0.81674, test_mpa:0.98439 ,f1_score:0.88876, reall:0.87849, dice:0.87758, testloss:0.03717==========last

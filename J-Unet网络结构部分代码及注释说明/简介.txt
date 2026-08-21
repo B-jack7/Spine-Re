@@ -1,0 +1,17 @@
+如需运行，请将data存放置相应文件夹下
+例如Res_Our_Unet/data  (data存放于该目录下)
+
+重点请查看Res_Our_Unet中的代码及注释
+
+①Res_Our_Unet和Unet+++的不同之处只有net和train有不同，所以注释可以相互参考，建议先看 Res_Our_Unet/nets/unet3plus.py
+	  Res_Our_Unet/train.py
+
+②如需统计模型参数量，可以使用提供的代码check_model.py/check.py/check_mod.py
+Res_Our_Unet文件夹下已经存放check_mod.py，其余模型需要测试时也需要放在相应路径下进行运行，具体请查看代码内容进行简单修改即可
+
+目前Res_Our_Unet的模型参数量： 25659999
+       Unet+++的模型参数量：  26977539
+       Unet的模型参数量：17267523
+
+
+		    	

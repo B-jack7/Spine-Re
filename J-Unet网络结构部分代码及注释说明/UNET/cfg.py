@@ -1,0 +1,12 @@
+BATCH_SIZE = 2
+EPOCH_NUMBER = 50
+LR=0.0001
+NCLSS=3
+TRAIN_ROOT = './data/train'
+TRAIN_LABEL = './data/train_labels'
+VAL_ROOT = './data/val'
+VAL_LABEL = './data/val_labels'
+TEST_ROOT = './data/test'
+TEST_LABEL = './data/test_labels'
+class_dict_path = './data/class_dict.csv'
+crop_size = (512, 512)

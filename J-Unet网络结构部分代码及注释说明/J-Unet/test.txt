@@ -1,0 +1,1 @@
+test_acc :0.93869 ,test_miou:0.81058, test_mpa:0.98373 ,f1_score:0.88844, reall:0.89126, dice:0.87298, testloss:0.03901==========last
