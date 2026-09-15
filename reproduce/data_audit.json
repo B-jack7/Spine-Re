@@ -1,0 +1,154 @@
+{
+  "source_commit": "b678a3130c7f2472208f33ce9c129ecc297061b0",
+  "split_summary": {
+    "train": {
+      "images": 1764,
+      "sizes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "class_pixels": [
+        416225448,
+        32946926,
+        5219272
+      ],
+      "unknown_pixels": 8030370,
+      "total_pixels": 462422016,
+      "unknown_fraction": 0.017365890295327115
+    },
+    "val": {
+      "images": 253,
+      "sizes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "class_pixels": [
+        60206819,
+        4374243,
+        666499
+      ],
+      "unknown_pixels": 1074871,
+      "total_pixels": 66322432,
+      "unknown_fraction": 0.016206748871935215
+    },
+    "test": {
+      "images": 506,
+      "sizes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "class_pixels": [
+        120541947,
+        8571456,
+        1371148
+      ],
+      "unknown_pixels": 2160313,
+      "total_pixels": 132644864,
+      "unknown_fraction": 0.016286442873506207
+    }
+  },
+  "exact_duplicate_groups": [],
+  "cross_split_duplicate_groups": [],
+  "patient_separation": "unverifiable: patient IDs and original NIfTI absent",
+  "authenticity": "not independently verified; repository PNGs only",
+  "archived_predictions": {
+    "count": 506,
+    "origin": "repository result_pics; weights absent; not a new model run",
+    "scores": {
+      "ignore": {
+        "pixel_accuracy": 0.9884058611658939,
+        "dice_per_class": [
+          0.9938227358622539,
+          0.9243126473727377,
+          0.8967803397082001
+        ],
+        "iou_per_class": [
+          0.9877213203718337,
+          0.8592762991172047,
+          0.8128755967519679
+        ],
+        "dice_macro_all": 0.9383052409810638,
+        "dice_macro_foreground": 0.9105464935404689,
+        "miou_all": 0.8866244054136687,
+        "miou_foreground": 0.8360759479345863,
+        "legacy_mean_recall_background_vertebra": 0.945380970417222,
+        "valid_pixels": 130484551,
+        "confusion": [
+          [
+            120101246,
+            339098,
+            101603
+          ],
+          [
+            896600,
+            7666464,
+            8392
+          ],
+          [
+            155716,
+            11447,
+            1203985
+          ]
+        ],
+        "image_macro_averages": {
+          "pixel_accuracy": 0.9883939005391662,
+          "dice_macro_all": 0.8928680088412471,
+          "miou_all": 0.8435657797211927,
+          "dice_macro_foreground": 0.8424161787127563,
+          "miou_foreground": 0.7715279688796549,
+          "legacy_mean_recall_background_vertebra": 0.941325194925186
+        }
+      },
+      "legacy-background": {
+        "pixel_accuracy": 0.983730813731318,
+        "dice_per_class": [
+          0.9912859087358937,
+          0.8949405068680134,
+          0.8643545850669399
+        ],
+        "iou_per_class": [
+          0.9827223762618685,
+          0.8098573085251285,
+          0.761113084860109
+        ],
+        "dice_macro_all": 0.916860333556949,
+        "dice_macro_foreground": 0.8796475459674766,
+        "miou_all": 0.8512309232157019,
+        "miou_foreground": 0.7854851966926187,
+        "legacy_mean_recall_background_vertebra": 0.9427841563809845,
+        "valid_pixels": 132644864,
+        "confusion": [
+          [
+            121616391,
+            883535,
+            202334
+          ],
+          [
+            896600,
+            7666464,
+            8392
+          ],
+          [
+            155716,
+            11447,
+            1203985
+          ]
+        ],
+        "image_macro_averages": {
+          "pixel_accuracy": 0.983730813731318,
+          "dice_macro_all": 0.8729849133651756,
+          "miou_all": 0.8105794840042964,
+          "dice_macro_foreground": 0.8138746539164381,
+          "miou_foreground": 0.7245739409434622,
+          "legacy_mean_recall_background_vertebra": 0.9386942328552138
+        }
+      }
+    }
+  }
+}

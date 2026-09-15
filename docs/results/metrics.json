@@ -1,0 +1,1577 @@
+{
+  "three_epoch_test": {
+    "epochs": 3,
+    "counts": {
+      "train": 1764,
+      "val": 253,
+      "test": 506
+    },
+    "seed": 20260915,
+    "model_parameters": 25659999,
+    "test": {
+      "pixel_accuracy": 0.9857505583170532,
+      "dice_per_class": [
+        0.9924004914787917,
+        0.9124271644568794,
+        0.891471938348132
+      ],
+      "iou_per_class": [
+        0.9849156168558247,
+        0.8389572952152897,
+        0.8041942907784483
+      ],
+      "dice_macro_all": 0.9320998647612676,
+      "dice_macro_foreground": 0.9019495514025058,
+      "miou_all": 0.8760224009498542,
+      "miou_foreground": 0.821575792996869,
+      "legacy_mean_recall_background_vertebra": 0.9713288297800196,
+      "valid_pixels": 130484551,
+      "confusion": [
+        [
+          119113390,
+          1167803,
+          260754
+        ],
+        [
+          367627,
+          8181530,
+          22299
+        ],
+        [
+          28086,
+          12763,
+          1330299
+        ]
+      ],
+      "images": 506,
+      "image_macro_averages": {
+        "dice_macro_all": 0.8993845308547601,
+        "dice_macro_foreground": 0.8529070629077108,
+        "miou_all": 0.8440582527981042,
+        "miou_foreground": 0.7736750632459523,
+        "pixel_accuracy": 0.9857383621428775
+      },
+      "best_epoch": 2,
+      "label_policy": "ignore",
+      "experiment": "new_training_on_repository_PNGs",
+      "full_dataset": true,
+      "planned_epochs": 3,
+      "source_checkpoint": "best.pt",
+      "patient_independent_test": "unverified"
+    },
+    "verification": {
+      "training_exit": 0,
+      "completed_epochs": 3,
+      "train_images": 1764,
+      "val_images": 253,
+      "test_images": 506,
+      "prediction_pngs": 506,
+      "saved_png_confusion_matches": true,
+      "batchnorm_batches_seen_min": 2646,
+      "batchnorm_batches_seen_max": 2646,
+      "best_checkpoint_sha256": "3106bf3130fc523f39667508bc6dc96ff6e30e826d6594a873129c0cb904dea7"
+    },
+    "rescored": {
+      "ignore": {
+        "pixel_accuracy": 0.9857505583170532,
+        "dice_per_class": [
+          0.9924004914787917,
+          0.9124271644568794,
+          0.891471938348132
+        ],
+        "iou_per_class": [
+          0.9849156168558247,
+          0.8389572952152897,
+          0.8041942907784483
+        ],
+        "dice_macro_all": 0.9320998647612676,
+        "dice_macro_foreground": 0.9019495514025058,
+        "miou_all": 0.8760224009498542,
+        "miou_foreground": 0.821575792996869,
+        "legacy_mean_recall_background_vertebra": 0.9713288297800196,
+        "valid_pixels": 130484551,
+        "confusion": [
+          [
+            119113390,
+            1167803,
+            260754
+          ],
+          [
+            367627,
+            8181530,
+            22299
+          ],
+          [
+            28086,
+            12763,
+            1330299
+          ]
+        ],
+        "image_macro_averages": {
+          "pixel_accuracy": 0.9857383621428775,
+          "dice_macro_all": 0.8993845308547601,
+          "dice_macro_foreground": 0.8529070629077108,
+          "miou_all": 0.8440582527981042,
+          "miou_foreground": 0.7736750632459523
+        }
+      },
+      "legacy-background": {
+        "pixel_accuracy": 0.9737824903646477,
+        "dice_per_class": [
+          0.9858187109148094,
+          0.8506210789919613,
+          0.8063065670425049
+        ],
+        "iou_per_class": [
+          0.972034015539801,
+          0.7400701922094951,
+          0.6754720640833213
+        ],
+        "dice_macro_all": 0.8809154523164251,
+        "dice_macro_foreground": 0.8284638230172331,
+        "miou_all": 0.7958587572775392,
+        "miou_foreground": 0.7077711281464082,
+        "legacy_mean_recall_background_vertebra": 0.9648387949884272,
+        "valid_pixels": 132644864,
+        "confusion": [
+          [
+            119655417,
+            2470854,
+            575989
+          ],
+          [
+            367627,
+            8181530,
+            22299
+          ],
+          [
+            28086,
+            12763,
+            1330299
+          ]
+        ],
+        "image_macro_averages": {
+          "pixel_accuracy": 0.9737824903646477,
+          "dice_macro_all": 0.8512544505904046,
+          "dice_macro_foreground": 0.784057606939848,
+          "miou_all": 0.7690676368311079,
+          "miou_foreground": 0.667717484696746
+        }
+      }
+    }
+  },
+  "fifteen_epoch_validation": {
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.14078073233974223,
+        "validation": {
+          "pixel_accuracy": 0.9844815195467613,
+          "dice_per_class": [
+            0.991612323026399,
+            0.9069497765169777,
+            0.8907274396057291
+          ],
+          "iou_per_class": [
+            0.9833641819210359,
+            0.8297420896424754,
+            0.802983388761673
+          ],
+          "dice_macro_all": 0.9297631797163687,
+          "dice_macro_foreground": 0.8988386080613534,
+          "miou_all": 0.8720298867750614,
+          "miou_foreground": 0.8163627392020743,
+          "legacy_mean_recall_background_vertebra": 0.9726228997382126,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59389734,
+              675616,
+              141469
+            ],
+            [
+              177155,
+              4194099,
+              2989
+            ],
+            [
+              10471,
+              4843,
+              651185
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.8907131334282233,
+            "dice_macro_foreground": 0.840286445650237,
+            "miou_all": 0.836787815301512,
+            "miou_foreground": 0.7635345198074369,
+            "pixel_accuracy": 0.9844737039621607
+          }
+        },
+        "elapsed_seconds": 807.0571323170007
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.10956533925603577,
+        "validation": {
+          "pixel_accuracy": 0.9865518038291117,
+          "dice_per_class": [
+            0.9927656204145879,
+            0.9210348577579918,
+            0.8841759317435045
+          ],
+          "iou_per_class": [
+            0.9856351615233988,
+            0.853628001219901,
+            0.7923972576833305
+          ],
+          "dice_macro_all": 0.9326588033053614,
+          "dice_macro_foreground": 0.9026053947507482,
+          "miou_all": 0.8772201401422102,
+          "miou_foreground": 0.8230126294516158,
+          "legacy_mean_recall_background_vertebra": 0.9724466314375088,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59538934,
+              520246,
+              147639
+            ],
+            [
+              187065,
+              4181717,
+              5461
+            ],
+            [
+              12782,
+              4269,
+              649448
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9016646177701565,
+            "dice_macro_foreground": 0.8561456608924248,
+            "miou_all": 0.8465905584187948,
+            "miou_foreground": 0.7771179398132149,
+            "pixel_accuracy": 0.9865396142771047
+          }
+        },
+        "elapsed_seconds": 819.834764059
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.10030824567725599,
+        "validation": {
+          "pixel_accuracy": 0.9861741498659238,
+          "dice_per_class": [
+            0.9926436176083626,
+            0.9145407410288737,
+            0.8814008191506064
+          ],
+          "iou_per_class": [
+            0.9853946775535941,
+            0.8425380625485096,
+            0.7879505315579851
+          ],
+          "dice_macro_all": 0.9295283925959476,
+          "dice_macro_foreground": 0.8979707800897401,
+          "miou_all": 0.8719610905533629,
+          "miou_foreground": 0.8152442970532474,
+          "legacy_mean_recall_background_vertebra": 0.9527316106026872,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59708539,
+              365193,
+              133087
+            ],
+            [
+              364676,
+              3996918,
+              12649
+            ],
+            [
+              22032,
+              4466,
+              640001
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.8924514910213248,
+            "dice_macro_foreground": 0.8423768262096407,
+            "miou_all": 0.835407398456493,
+            "miou_foreground": 0.760443985940713,
+            "pixel_accuracy": 0.9861667469346022
+          }
+        },
+        "elapsed_seconds": 1646.1680535740006
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.09616792485827491,
+        "validation": {
+          "pixel_accuracy": 0.9881182685127494,
+          "dice_per_class": [
+            0.9936886369493291,
+            0.9261375749319786,
+            0.9038201506380886
+          ],
+          "iou_per_class": [
+            0.9874564408543737,
+            0.8624359632224905,
+            0.8245181218795476
+          ],
+          "dice_macro_all": 0.9412154541731321,
+          "dice_macro_foreground": 0.9149788627850336,
+          "miou_all": 0.8914701753188039,
+          "miou_foreground": 0.8434770425510191,
+          "legacy_mean_recall_background_vertebra": 0.9647543330873946,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59724321,
+              377979,
+              104519
+            ],
+            [
+              259567,
+              4100952,
+              13724
+            ],
+            [
+              16607,
+              2858,
+              647034
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9115135341022376,
+            "dice_macro_foreground": 0.8704492482554473,
+            "miou_all": 0.861251025121786,
+            "miou_foreground": 0.7981831484885035,
+            "pixel_accuracy": 0.9881104102026442
+          }
+        },
+        "elapsed_seconds": 2470.2867684860003
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.09316385535696467,
+        "validation": {
+          "pixel_accuracy": 0.9872136983020714,
+          "dice_per_class": [
+            0.993143737697982,
+            0.9258126815611866,
+            0.8799281024391693
+          ],
+          "iou_per_class": [
+            0.9863808518480242,
+            0.8618726600745302,
+            0.7855996604819565
+          ],
+          "dice_macro_all": 0.9329615072327794,
+          "dice_macro_foreground": 0.9028703920001779,
+          "miou_all": 0.8779510574681703,
+          "miou_foreground": 0.8237361602782434,
+          "legacy_mean_recall_background_vertebra": 0.9712764984720428,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59594239,
+              457437,
+              155143
+            ],
+            [
+              199012,
+              4167462,
+              7769
+            ],
+            [
+              11237,
+              3677,
+              651585
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9031980835304972,
+            "dice_macro_foreground": 0.8582524500088821,
+            "miou_all": 0.8481073586285011,
+            "miou_foreground": 0.7790131491926884,
+            "pixel_accuracy": 0.9872039396916481
+          }
+        },
+        "elapsed_seconds": 3296.2088132830013
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.09115605701664949,
+        "validation": {
+          "pixel_accuracy": 0.9872222043671487,
+          "dice_per_class": [
+            0.9931333828255462,
+            0.9224867926160173,
+            0.9054378126338866
+          ],
+          "iou_per_class": [
+            0.9863604234020124,
+            0.8561257405425748,
+            0.8272145914456227
+          ],
+          "dice_macro_all": 0.9403526626918167,
+          "dice_macro_foreground": 0.9139623026249519,
+          "miou_all": 0.8899002517967367,
+          "miou_foreground": 0.8416701659940988,
+          "legacy_mean_recall_background_vertebra": 0.9761181064435814,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59549888,
+              543207,
+              113724
+            ],
+            [
+              154553,
+              4213041,
+              6649
+            ],
+            [
+              11983,
+              3604,
+              650912
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9084740479512735,
+            "dice_macro_foreground": 0.866171013588949,
+            "miou_all": 0.8579715773413821,
+            "miou_foreground": 0.7938191421917643,
+            "pixel_accuracy": 0.9872125756083536
+          }
+        },
+        "elapsed_seconds": 4123.329238835
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.08790299174736957,
+        "validation": {
+          "pixel_accuracy": 0.9871461861999715,
+          "dice_per_class": [
+            0.9931530940717505,
+            0.928406383310804,
+            0.8647013811888189
+          ],
+          "iou_per_class": [
+            0.9863993107831281,
+            0.866379165433269,
+            0.7616510465715919
+          ],
+          "dice_macro_all": 0.9287536195237912,
+          "dice_macro_foreground": 0.8965538822498115,
+          "miou_all": 0.8714765075959964,
+          "miou_foreground": 0.8140151060024304,
+          "legacy_mean_recall_background_vertebra": 0.977454847906319,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59528285,
+              497526,
+              181008
+            ],
+            [
+              136402,
+              4226305,
+              11536
+            ],
+            [
+              5853,
+              6355,
+              654291
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9005898163510779,
+            "dice_macro_foreground": 0.8543355542082097,
+            "miou_all": 0.8445025049696151,
+            "miou_foreground": 0.7735958134854527,
+            "pixel_accuracy": 0.9871371627125755
+          }
+        },
+        "elapsed_seconds": 4949.873211393
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.08484303275473805,
+        "validation": {
+          "pixel_accuracy": 0.9888346171284471,
+          "dice_per_class": [
+            0.9940677245675835,
+            0.9331685184637404,
+            0.8913894828514469
+          ],
+          "iou_per_class": [
+            0.9882054178451201,
+            0.8747103311199236,
+            0.8040600996138676
+          ],
+          "dice_macro_all": 0.9395419086275902,
+          "dice_macro_foreground": 0.9122790006575936,
+          "miou_all": 0.8889919495263037,
+          "miou_foreground": 0.8393852153668956,
+          "legacy_mean_recall_background_vertebra": 0.9652122799698754,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59777193,
+              312045,
+              117581
+            ],
+            [
+              260329,
+              4101117,
+              12797
+            ],
+            [
+              23507,
+              2255,
+              640737
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9084170270929022,
+            "dice_macro_foreground": 0.8656132348821985,
+            "miou_all": 0.8572302970042673,
+            "miou_foreground": 0.7917762388446108,
+            "pixel_accuracy": 0.98882699726411
+          }
+        },
+        "elapsed_seconds": 5773.995689166
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.0864675934352572,
+        "validation": {
+          "pixel_accuracy": 0.9894093512552906,
+          "dice_per_class": [
+            0.9943273480454473,
+            0.9363505970867317,
+            0.9064784686722429
+          ],
+          "iou_per_class": [
+            0.9887186910302717,
+            0.8803188292327593,
+            0.8289534706935254
+          ],
+          "dice_macro_all": 0.9457188046014741,
+          "dice_macro_foreground": 0.9214145328794874,
+          "miou_all": 0.8993303303188521,
+          "miou_foreground": 0.8546361499631423,
+          "legacy_mean_recall_background_vertebra": 0.9724336718753083,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59740777,
+              356415,
+              109627
+            ],
+            [
+              200719,
+              4166939,
+              6585
+            ],
+            [
+              14883,
+              2785,
+              648831
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9148019089370881,
+            "dice_macro_foreground": 0.8750591183431439,
+            "miou_all": 0.86778173108877,
+            "miou_foreground": 0.8073428830094312,
+            "pixel_accuracy": 0.9894027568572651
+          }
+        },
+        "elapsed_seconds": 6599.997837406001
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.08297117747146797,
+        "validation": {
+          "pixel_accuracy": 0.9893035695234647,
+          "dice_per_class": [
+            0.9942861317087035,
+            0.9380925879238907,
+            0.8903126917682125
+          ],
+          "iou_per_class": [
+            0.98863718902275,
+            0.8834033713823024,
+            0.8023095201357815
+          ],
+          "dice_macro_all": 0.9408971371336022,
+          "dice_macro_foreground": 0.9142026398460517,
+          "miou_all": 0.8914500268469446,
+          "miou_foreground": 0.842856445759042,
+          "legacy_mean_recall_background_vertebra": 0.9716356920037457,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59739633,
+              332202,
+              134984
+            ],
+            [
+              205560,
+              4160041,
+              8642
+            ],
+            [
+              13866,
+              2662,
+              649971
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9120532884742683,
+            "dice_macro_foreground": 0.8709599516494468,
+            "miou_all": 0.8617295918626477,
+            "miou_foreground": 0.7983121260503836,
+            "pixel_accuracy": 0.9892947886119239
+          }
+        },
+        "elapsed_seconds": 7432.686210135
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.08299674887776104,
+        "validation": {
+          "pixel_accuracy": 0.9876795394696822,
+          "dice_per_class": [
+            0.9934251142339997,
+            0.9269894600398702,
+            0.8881882278380734
+          ],
+          "iou_per_class": [
+            0.9869361219736834,
+            0.8639145893891355,
+            0.7988656444165764
+          ],
+          "dice_macro_all": 0.9362009340373144,
+          "dice_macro_foreground": 0.9075888439389718,
+          "miou_all": 0.8832387852597984,
+          "miou_foreground": 0.8313901169028559,
+          "legacy_mean_recall_background_vertebra": 0.9713304861141825,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59633966,
+              444404,
+              128449
+            ],
+            [
+              197165,
+              4165048,
+              12030
+            ],
+            [
+              19345,
+              2487,
+              644667
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9054126236688459,
+            "dice_macro_foreground": 0.86143808971066,
+            "miou_all": 0.8528464236838784,
+            "miou_foreground": 0.7858485557546788,
+            "pixel_accuracy": 0.9876681047659134
+          }
+        },
+        "elapsed_seconds": 8259.478577609001
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.0804080702279971,
+        "validation": {
+          "pixel_accuracy": 0.9872431553418526,
+          "dice_per_class": [
+            0.9932504991591994,
+            0.9281338640701836,
+            0.8646588946601663
+          ],
+          "iou_per_class": [
+            0.9865914990071241,
+            0.8659046432743687,
+            0.7615851223860639
+          ],
+          "dice_macro_all": 0.928681085963183,
+          "dice_macro_foreground": 0.896396379365175,
+          "miou_all": 0.8713604215558522,
+          "miou_foreground": 0.8137448828302163,
+          "legacy_mean_recall_background_vertebra": 0.9742782567097064,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59563089,
+              469497,
+              174233
+            ],
+            [
+              157453,
+              4195986,
+              20804
+            ],
+            [
+              8323,
+              2043,
+              656133
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9006671080282851,
+            "dice_macro_foreground": 0.8544044074969152,
+            "miou_all": 0.8445821675875096,
+            "miou_foreground": 0.7736212010788049,
+            "pixel_accuracy": 0.9872336423828667
+          }
+        },
+        "elapsed_seconds": 9084.886803394
+      },
+      {
+        "epoch": 13,
+        "train_loss": 0.07969432163671031,
+        "validation": {
+          "pixel_accuracy": 0.9895739091304884,
+          "dice_per_class": [
+            0.9944544840096198,
+            0.9390896367489043,
+            0.8965733261594454
+          ],
+          "iou_per_class": [
+            0.9889701343157633,
+            0.885173403218648,
+            0.8125354837026537
+          ],
+          "dice_macro_all": 0.9433724823059898,
+          "dice_macro_foreground": 0.9178314814541748,
+          "miou_all": 0.8955596737456885,
+          "miou_foreground": 0.8488544434606509,
+          "legacy_mean_recall_background_vertebra": 0.9749535721866202,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59722957,
+              356881,
+              126981
+            ],
+            [
+              172497,
+              4190279,
+              11467
+            ],
+            [
+              9724,
+              2727,
+              654048
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9167972698952155,
+            "dice_macro_foreground": 0.8779919125730341,
+            "miou_all": 0.8684558856453329,
+            "miou_foreground": 0.8082332067422473,
+            "pixel_accuracy": 0.9895663663945549
+          }
+        },
+        "elapsed_seconds": 9909.221813859
+      },
+      {
+        "epoch": 14,
+        "train_loss": 0.07890185585367977,
+        "validation": {
+          "pixel_accuracy": 0.9882150537397099,
+          "dice_per_class": [
+            0.9937421433876584,
+            0.9305760797982556,
+            0.8873692165450723
+          ],
+          "iou_per_class": [
+            0.9875621212371763,
+            0.8701657614154586,
+            0.7975414933151715
+          ],
+          "dice_macro_all": 0.9372291465769954,
+          "dice_macro_foreground": 0.908972648171664,
+          "miou_all": 0.885089791989269,
+          "miou_foreground": 0.8338536273653151,
+          "legacy_mean_recall_background_vertebra": 0.9722701434424423,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59660910,
+              417582,
+              128327
+            ],
+            [
+              187266,
+              4171311,
+              15666
+            ],
+            [
+              18226,
+              1872,
+              646401
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9067657321894459,
+            "dice_macro_foreground": 0.8633007937235945,
+            "miou_all": 0.8546991664733088,
+            "miou_foreground": 0.7883025622836053,
+            "pixel_accuracy": 0.9882060028964147
+          }
+        },
+        "elapsed_seconds": 10730.419710319002
+      },
+      {
+        "epoch": 15,
+        "train_loss": 0.07712329244938027,
+        "validation": {
+          "pixel_accuracy": 0.9893136388653669,
+          "dice_per_class": [
+            0.99429427391694,
+            0.9362307893568824,
+            0.8991737114788884
+          ],
+          "iou_per_class": [
+            0.9886532890584562,
+            0.8801070570475246,
+            0.8168170771856018
+          ],
+          "dice_macro_all": 0.9432329249175703,
+          "dice_macro_foreground": 0.9177022504178853,
+          "miou_all": 0.8951924744305275,
+          "miou_foreground": 0.8484620671165632,
+          "legacy_mean_recall_background_vertebra": 0.9685807481996535,
+          "valid_pixels": 65247561,
+          "confusion": [
+            [
+              59769086,
+              317308,
+              120425
+            ],
+            [
+              234170,
+              4131175,
+              8898
+            ],
+            [
+              14063,
+              2395,
+              650041
+            ]
+          ],
+          "images": 253,
+          "image_macro_averages": {
+            "dice_macro_all": 0.9142318323881288,
+            "dice_macro_foreground": 0.8742167493327344,
+            "miou_all": 0.8648264027524122,
+            "miou_foreground": 0.8029353069051517,
+            "pixel_accuracy": 0.9893087506681257
+          }
+        },
+        "elapsed_seconds": 11553.651910929002
+      }
+    ],
+    "sample_selection": "6 evenly spaced validation filenames + 2 smallest nonempty reference foreground masks; no test images",
+    "sample_metrics": [
+      {
+        "epoch": 9,
+        "filename": "1765.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 17027,
+        "gt_disc_pixels": 1566,
+        "unknown_pixels": 3083,
+        "pixel_accuracy": 0.9874431118539649,
+        "dice_per_class": [
+          0.9932410645375361,
+          0.9261092557251909,
+          0.7996914373875033
+        ],
+        "iou_per_class": [
+          0.986572882098416,
+          0.862386849558505,
+          0.6662382176520995
+        ],
+        "dice_macro_all": 0.9063472525500768,
+        "dice_macro_foreground": 0.8629003465563471,
+        "miou_all": 0.8383993164363401,
+        "miou_foreground": 0.7643125336053023,
+        "legacy_mean_recall_background_vertebra": 0.9523847791651692,
+        "valid_pixels": 259061,
+        "confusion": [
+          [
+            238724,
+            976,
+            768
+          ],
+          [
+            1498,
+            15529,
+            0
+          ],
+          [
+            7,
+            4,
+            1555
+          ]
+        ]
+      },
+      {
+        "epoch": 9,
+        "filename": "1815.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 9705,
+        "gt_disc_pixels": 1066,
+        "unknown_pixels": 2393,
+        "pixel_accuracy": 0.9915072511751639,
+        "dice_per_class": [
+          0.9956519730803913,
+          0.8958127438231469,
+          0.8961702127659574
+        ],
+        "iou_per_class": [
+          0.991341593146861,
+          0.8112869794610891,
+          0.8118735543562067
+        ],
+        "dice_macro_all": 0.9292116432231653,
+        "dice_macro_foreground": 0.8959914782945522,
+        "miou_all": 0.8715007089880523,
+        "miou_foreground": 0.8115802669086478,
+        "legacy_mean_recall_background_vertebra": 0.9414302957819531,
+        "valid_pixels": 259751,
+        "confusion": [
+          [
+            247881,
+            905,
+            194
+          ],
+          [
+            1057,
+            8611,
+            37
+          ],
+          [
+            9,
+            4,
+            1053
+          ]
+        ]
+      },
+      {
+        "epoch": 9,
+        "filename": "1865.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 18748,
+        "gt_disc_pixels": 2778,
+        "unknown_pixels": 4417,
+        "pixel_accuracy": 0.9874440784240689,
+        "dice_per_class": [
+          0.993115274474178,
+          0.9365128047845422,
+          0.8806728022849889
+        ],
+        "iou_per_class": [
+          0.9863246996378328,
+          0.8806056236481615,
+          0.78678763821945
+        ],
+        "dice_macro_all": 0.9367669605145696,
+        "dice_macro_foreground": 0.9085928035347656,
+        "miou_all": 0.8845726538351482,
+        "miou_foreground": 0.8336966309338057,
+        "legacy_mean_recall_background_vertebra": 0.9826722623171622,
+        "valid_pixels": 257727,
+        "confusion": [
+          [
+            233395,
+            2057,
+            749
+          ],
+          [
+            427,
+            18321,
+            0
+          ],
+          [
+            3,
+            0,
+            2775
+          ]
+        ]
+      },
+      {
+        "epoch": 9,
+        "filename": "1916.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 14878,
+        "gt_disc_pixels": 1442,
+        "unknown_pixels": 3453,
+        "pixel_accuracy": 0.9917739697167663,
+        "dice_per_class": [
+          0.9956037363069317,
+          0.9443576727840687,
+          0.871841704718417
+        ],
+        "iou_per_class": [
+          0.9912459576922285,
+          0.89458109857592,
+          0.7728008634646519
+        ],
+        "dice_macro_all": 0.9372677046031391,
+        "dice_macro_foreground": 0.9080996887512429,
+        "miou_all": 0.8862093065776001,
+        "miou_foreground": 0.8336909810202859,
+        "legacy_mean_recall_background_vertebra": 0.9840541221682352,
+        "valid_pixels": 258691,
+        "confusion": [
+          [
+            240620,
+            1343,
+            408
+          ],
+          [
+            364,
+            14511,
+            3
+          ],
+          [
+            10,
+            0,
+            1432
+          ]
+        ]
+      },
+      {
+        "epoch": 9,
+        "filename": "1966.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 6367,
+        "gt_disc_pixels": 218,
+        "unknown_pixels": 1009,
+        "pixel_accuracy": 0.9981197464912784,
+        "dice_per_class": [
+          0.9990357972542805,
+          0.9727681742836846,
+          0.6075268817204301
+        ],
+        "iou_per_class": [
+          0.9980734520913442,
+          0.9469801751959428,
+          0.4362934362934363
+        ],
+        "dice_macro_all": 0.8597769510861317,
+        "dice_macro_foreground": 0.7901475280020573,
+        "miou_all": 0.7937823545269079,
+        "miou_foreground": 0.6916368057446896,
+        "legacy_mean_recall_background_vertebra": 0.9835458370550514,
+        "valid_pixels": 261135,
+        "confusion": [
+          [
+            254369,
+            140,
+            41
+          ],
+          [
+            205,
+            6162,
+            0
+          ],
+          [
+            105,
+            0,
+            113
+          ]
+        ]
+      },
+      {
+        "epoch": 9,
+        "filename": "2017.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 3719,
+        "gt_disc_pixels": 41,
+        "unknown_pixels": 676,
+        "pixel_accuracy": 0.9971392292747104,
+        "dice_per_class": [
+          0.9985486944070407,
+          0.9056956115779645,
+          0
+        ],
+        "iou_per_class": [
+          0.997101595285055,
+          0.8276450511945392,
+          0
+        ],
+        "dice_macro_all": 0.6347481019950018,
+        "dice_macro_foreground": 0.45284780578898226,
+        "miou_all": 0.6082488821598647,
+        "miou_foreground": 0.4138225255972696,
+        "legacy_mean_recall_background_vertebra": 0.9556968141222117,
+        "valid_pixels": 261468,
+        "confusion": [
+          [
+            257325,
+            383,
+            0
+          ],
+          [
+            324,
+            3395,
+            0
+          ],
+          [
+            41,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "epoch": 9,
+        "filename": "1903.png",
+        "selection": "smallest nonempty label",
+        "gt_vertebra_pixels": 3018,
+        "gt_disc_pixels": 142,
+        "unknown_pixels": 745,
+        "pixel_accuracy": 0.9887681284167116,
+        "dice_per_class": [
+          0.9945464839071207,
+          0.12313432835820895,
+          0.22535211267605634
+        ],
+        "iou_per_class": [
+          0.989152126864957,
+          0.06560636182902585,
+          0.12698412698412698
+        ],
+        "dice_macro_all": 0.44767764164712864,
+        "dice_macro_foreground": 0.17424322051713265,
+        "miou_all": 0.39391420522603665,
+        "miou_foreground": 0.09629524440657641,
+        "legacy_mean_recall_background_vertebra": 0.532791563769154,
+        "valid_pixels": 261399,
+        "confusion": [
+          [
+            258233,
+            0,
+            6
+          ],
+          [
+            2716,
+            198,
+            104
+          ],
+          [
+            110,
+            0,
+            32
+          ]
+        ]
+      },
+      {
+        "epoch": 9,
+        "filename": "1900.png",
+        "selection": "smallest nonempty label",
+        "gt_vertebra_pixels": 3996,
+        "gt_disc_pixels": 242,
+        "unknown_pixels": 1075,
+        "pixel_accuracy": 0.9970352665387311,
+        "dice_per_class": [
+          0.9984937355746963,
+          0.930922693266833,
+          0.16666666666666666
+        ],
+        "iou_per_class": [
+          0.9969920019897868,
+          0.8707721017028225,
+          0.09090909090909091
+        ],
+        "dice_macro_all": 0.6986943651693985,
+        "dice_macro_foreground": 0.5487946799667498,
+        "miou_all": 0.6528910648672334,
+        "miou_foreground": 0.4808405963059567,
+        "legacy_mean_recall_background_vertebra": 0.9665255716953991,
+        "valid_pixels": 261069,
+        "confusion": [
+          [
+            256540,
+            291,
+            0
+          ],
+          [
+            263,
+            3733,
+            0
+          ],
+          [
+            220,
+            0,
+            22
+          ]
+        ]
+      },
+      {
+        "epoch": 15,
+        "filename": "1765.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 17027,
+        "gt_disc_pixels": 1566,
+        "unknown_pixels": 3083,
+        "pixel_accuracy": 0.9865552900668182,
+        "dice_per_class": [
+          0.9928087740434548,
+          0.9124723157671187,
+          0.8345362202619621
+        ],
+        "iou_per_class": [
+          0.9857202370886112,
+          0.8390336439212186,
+          0.7160550458715597
+        ],
+        "dice_macro_all": 0.9132724366908452,
+        "dice_macro_foreground": 0.8735042680145404,
+        "miou_all": 0.8469363089604632,
+        "miou_foreground": 0.7775443448963891,
+        "legacy_mean_recall_background_vertebra": 0.9384967183894083,
+        "valid_pixels": 259061,
+        "confusion": [
+          [
+            238979,
+            893,
+            596
+          ],
+          [
+            1971,
+            15038,
+            18
+          ],
+          [
+            2,
+            3,
+            1561
+          ]
+        ]
+      },
+      {
+        "epoch": 15,
+        "filename": "1815.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 9705,
+        "gt_disc_pixels": 1066,
+        "unknown_pixels": 2393,
+        "pixel_accuracy": 0.9872377777178913,
+        "dice_per_class": [
+          0.993597925647633,
+          0.840551709332904,
+          0.8191284226764366
+        ],
+        "iou_per_class": [
+          0.9872773029477572,
+          0.7249583410479541,
+          0.6936642717178315
+        ],
+        "dice_macro_all": 0.8844260192189912,
+        "dice_macro_foreground": 0.8298400660046703,
+        "miou_all": 0.8019666385711809,
+        "miou_foreground": 0.7093113063828929,
+        "legacy_mean_recall_background_vertebra": 0.9005660549963954,
+        "valid_pixels": 259751,
+        "confusion": [
+          [
+            247543,
+            1096,
+            341
+          ],
+          [
+            1750,
+            7831,
+            124
+          ],
+          [
+            3,
+            1,
+            1062
+          ]
+        ]
+      },
+      {
+        "epoch": 15,
+        "filename": "1865.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 18748,
+        "gt_disc_pixels": 2778,
+        "unknown_pixels": 4417,
+        "pixel_accuracy": 0.9875837611115638,
+        "dice_per_class": [
+          0.9931929955924647,
+          0.9378571611613664,
+          0.8775090880354038
+        ],
+        "iou_per_class": [
+          0.9864780352585231,
+          0.8829859100559737,
+          0.7817516192621796
+        ],
+        "dice_macro_all": 0.936186414929745,
+        "dice_macro_foreground": 0.9076831245983852,
+        "miou_all": 0.8837385215255589,
+        "miou_foreground": 0.8323687646590767,
+        "legacy_mean_recall_background_vertebra": 0.9822061930124437,
+        "valid_pixels": 257727,
+        "confusion": [
+          [
+            233452,
+            1976,
+            773
+          ],
+          [
+            449,
+            18299,
+            0
+          ],
+          [
+            2,
+            0,
+            2776
+          ]
+        ]
+      },
+      {
+        "epoch": 15,
+        "filename": "1916.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 14878,
+        "gt_disc_pixels": 1442,
+        "unknown_pixels": 3453,
+        "pixel_accuracy": 0.99295298251582,
+        "dice_per_class": [
+          0.9962384348914599,
+          0.9552807486631016,
+          0.8548435171385991
+        ],
+        "iou_per_class": [
+          0.9925050624783919,
+          0.9143899161814576,
+          0.7464862051015096
+        ],
+        "dice_macro_all": 0.9354542335643868,
+        "dice_macro_foreground": 0.9050621329008504,
+        "miou_all": 0.8844603945871197,
+        "miou_foreground": 0.8304380606414836,
+        "legacy_mean_recall_background_vertebra": 0.9777395797631938,
+        "valid_pixels": 258691,
+        "confusion": [
+          [
+            241143,
+            751,
+            477
+          ],
+          [
+            585,
+            14291,
+            2
+          ],
+          [
+            8,
+            0,
+            1434
+          ]
+        ]
+      },
+      {
+        "epoch": 15,
+        "filename": "1966.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 6367,
+        "gt_disc_pixels": 218,
+        "unknown_pixels": 1009,
+        "pixel_accuracy": 0.9977368028031478,
+        "dice_per_class": [
+          0.9988386967465824,
+          0.9808777429467085,
+          0.42070116861435725
+        ],
+        "iou_per_class": [
+          0.9976800876149652,
+          0.9624730852045524,
+          0.266384778012685
+        ],
+        "dice_macro_all": 0.8001392027692161,
+        "dice_macro_foreground": 0.7007894557805329,
+        "miou_all": 0.7421793169440676,
+        "miou_foreground": 0.6144289316086187,
+        "legacy_mean_recall_background_vertebra": 0.9906741809819799,
+        "valid_pixels": 261135,
+        "confusion": [
+          [
+            254160,
+            135,
+            255
+          ],
+          [
+            109,
+            6258,
+            0
+          ],
+          [
+            92,
+            0,
+            126
+          ]
+        ]
+      },
+      {
+        "epoch": 15,
+        "filename": "2017.png",
+        "selection": "fixed evenly-spaced",
+        "gt_vertebra_pixels": 3719,
+        "gt_disc_pixels": 41,
+        "unknown_pixels": 676,
+        "pixel_accuracy": 0.9961983875655912,
+        "dice_per_class": [
+          0.9980707120896867,
+          0.8745762711864407,
+          0.36
+        ],
+        "iou_per_class": [
+          0.9961488541485054,
+          0.7771084337349398,
+          0.21951219512195122
+        ],
+        "dice_macro_all": 0.7442156610920424,
+        "dice_macro_foreground": 0.6172881355932203,
+        "miou_all": 0.6642564943351321,
+        "miou_foreground": 0.4983103144284455,
+        "legacy_mean_recall_background_vertebra": 0.9497693810537182,
+        "valid_pixels": 261468,
+        "confusion": [
+          [
+            257111,
+            597,
+            0
+          ],
+          [
+            365,
+            3354,
+            0
+          ],
+          [
+            32,
+            0,
+            9
+          ]
+        ]
+      },
+      {
+        "epoch": 15,
+        "filename": "1903.png",
+        "selection": "smallest nonempty label",
+        "gt_vertebra_pixels": 3018,
+        "gt_disc_pixels": 142,
+        "unknown_pixels": 745,
+        "pixel_accuracy": 0.9919242231225062,
+        "dice_per_class": [
+          0.9959270614066398,
+          0.5137744290087121,
+          0.8174603174603174
+        ],
+        "iou_per_class": [
+          0.9918871658884342,
+          0.34569074778200254,
+          0.6912751677852349
+        ],
+        "dice_macro_all": 0.7757206026252231,
+        "dice_macro_foreground": 0.6656173732345148,
+        "miou_all": 0.6762843604852238,
+        "miou_foreground": 0.5184829577836187,
+        "legacy_mean_recall_background_vertebra": 0.6804680926121025,
+        "valid_pixels": 261399,
+        "confusion": [
+          [
+            258094,
+            138,
+            7
+          ],
+          [
+            1927,
+            1091,
+            0
+          ],
+          [
+            39,
+            0,
+            103
+          ]
+        ]
+      },
+      {
+        "epoch": 15,
+        "filename": "1900.png",
+        "selection": "smallest nonempty label",
+        "gt_vertebra_pixels": 3996,
+        "gt_disc_pixels": 242,
+        "unknown_pixels": 1075,
+        "pixel_accuracy": 0.9962615247310098,
+        "dice_per_class": [
+          0.9981553046666122,
+          0.9055399540464641,
+          0.33668341708542715
+        ],
+        "iou_per_class": [
+          0.9963174026034565,
+          0.827385117797994,
+          0.20241691842900303
+        ],
+        "dice_macro_all": 0.7467928919328344,
+        "dice_macro_foreground": 0.6211116855659456,
+        "miou_all": 0.6753731462768178,
+        "miou_foreground": 0.5149010181134985,
+        "legacy_mean_recall_background_vertebra": 0.943133543287427,
+        "valid_pixels": 261069,
+        "confusion": [
+          [
+            256479,
+            291,
+            61
+          ],
+          [
+            421,
+            3547,
+            28
+          ],
+          [
+            175,
+            0,
+            67
+          ]
+        ]
+      }
+    ]
+  }
+}
