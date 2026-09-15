@@ -1,0 +1,4 @@
+# Colab already includes these. Actual versions are written to config.json.
+torch>=2.3
+numpy>=1.26
+Pillow>=10
