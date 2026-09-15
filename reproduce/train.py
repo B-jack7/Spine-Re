@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import random
+import shutil
 import subprocess
 import sys
 import time
@@ -144,7 +145,8 @@ def run(a):
     (output/'config.json').write_text(json.dumps(config,indent=2),encoding='utf-8')
     print(json.dumps(config),flush=True)
     started=time.monotonic()
-    for epoch in range(start,a.epochs):
+    stop_epoch = min(a.epochs, (start//a.pause_every+1)*a.pause_every) if a.pause_every else a.epochs
+    for epoch in range(start,stop_epoch):
         model.train()  # Restore BatchNorm training mode after every validation.
         losses=[]
         for step,(x,y,_) in enumerate(tr_loader):
@@ -170,6 +172,12 @@ def run(a):
         row=dict(epoch=epoch+1,train_loss=float(np.mean(losses)),validation=result,elapsed_seconds=time.monotonic()-started)
         with (output/'history.jsonl').open('a',encoding='utf-8') as f:f.write(json.dumps(row)+'\n')
         print(json.dumps(row),flush=True)
+        if a.pause_every and (epoch+1 == stop_epoch):
+            shutil.copy2(output/'last.pt',output/f'epoch_{epoch+1:03}.pt')
+            (output/f'epoch_{epoch+1:03}_validation.json').write_text(json.dumps(row,indent=2),encoding='utf-8')
+    if stop_epoch < a.epochs:
+        print(f'PAUSED at epoch {stop_epoch}/{a.epochs}; review validation and rerun with --resume to continue.',flush=True)
+        return
     best_ckpt=torch.load(output/'best.pt',map_location=device,weights_only=True)
     model.load_state_dict(best_ckpt['model'])
     pred_dir=output/'predictions';pred_dir.mkdir(exist_ok=True)
@@ -189,7 +197,8 @@ if __name__=='__main__':
     p.add_argument('--repo',default=str(Path(__file__).resolve().parents[1]))
     p.add_argument('--output',required=True)
     p.add_argument('--model',choices=['junet','unet'],default='junet')
-    p.add_argument('--epochs',type=int,default=100);p.add_argument('--batch-size',type=int,default=2)
+    p.add_argument('--epochs',type=int,default=50);p.add_argument('--batch-size',type=int,default=2)
+    p.add_argument('--pause-every',type=int,default=0,help='Pause after this many total epochs per stage; 0 disables pauses')
     p.add_argument('--lr',type=float,default=1e-4);p.add_argument('--seed',type=int,default=20260915)
     p.add_argument('--loss',choices=['dice','ce'],default='dice')
     p.add_argument('--label-policy',choices=['ignore','legacy-background'],default='ignore')
@@ -197,5 +206,5 @@ if __name__=='__main__':
     p.add_argument('--resume',action='store_true');p.add_argument('--no-amp',action='store_true')
     p.add_argument('--allow-cpu',action='store_true')
     a=p.parse_args()
-    if a.epochs<1 or a.batch_size<1 or min(a.train_limit,a.val_limit,a.test_limit)<0:p.error('Invalid count')
+    if a.epochs<1 or a.batch_size<1 or min(a.train_limit,a.val_limit,a.test_limit,a.pause_every)<0:p.error('Invalid count')
     run(a)
