@@ -32,6 +32,8 @@ RUN_NAME = "junet_50_ignore_seed20260915"
 - 查看验证结果后，再运行训练单元格即可从同一目录续跑下一段。
 - 第 **50 轮**：保存断点，用验证集选出的最佳模型完成最终测试。
 
+需要提前停止时，点击训练单元格的停止按钮。程序会结束本次训练子进程并释放其 GPU 占用；当前未完成轮次不会保存，续跑从最近完整断点开始。清理逻辑需要笔记本内核仍存活；强制删除运行时无法触发它。网络断开或页面显示“正在连接”不表示训练已经停止。
+
 GPU 会话被回收后，重新打开笔记本、连接 GPU 并挂载同一 Drive，保持相同代码、配置和 `RUN_NAME`。程序会自动检测 `last.pt`；代码哈希或关键配置不一致时会停止续跑，避免混合不同实验。新实验请换一个 `RUN_NAME`。只加载自己生成或来源可信的权重文件。
 
 ## 项目组成
@@ -107,6 +109,19 @@ python reproduce/train.py --output runs/junet_50 --epochs 50 --pause-every 15 --
 ```
 
 使用支持 CUDA 的 PyTorch 安装。显存不足时，可为新实验降低 `--batch-size`，但不要把改变 batch 后的运行混入原实验。默认禁止误用 CPU 进行长训练；确需 CPU 运行可显式加 `--allow-cpu`，速度会明显变慢。
+
+### 修改代码后的快速检查
+
+以下检查仅需 CPU，GitHub Actions 也会运行；无需下载数据或安装 PyTorch：
+
+```bash
+python -m pip install numpy Pillow
+python reproduce/test_core.py
+python -m unittest discover -s tests -v
+python scripts/check_notebooks.py
+```
+
+检查覆盖指标、训练子进程的中断清理，以及两个 Colab 入口和内嵌源码的一致性。修改训练源码时，需要同步更新两个笔记本中的副本；续跑旧实验仍要求训练源码哈希一致。
 
 ## 输出文件
 
