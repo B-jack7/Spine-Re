@@ -4,6 +4,10 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/B-jack7/Spine-Re/blob/main/notebooks/Spine_Re_Quickstart.ipynb)
 
+## 许可证
+
+维护者新增的训练辅助代码、测试和原创说明文字按 [MIT 许可证](LICENSE) 授权，具体文件见[许可范围与来源说明](docs/LICENSING.md)。历史模型代码、MRI 数据、标签和图片不在本次授权范围内，其来源和许可仍需核实；本仓库并非全部内容统一采用 MIT。
+
 ## 快速开始：先跑通一个小实验
 
 1. 点击上方 **Open in Colab**，按需要在 Drive 保存一份笔记本。
