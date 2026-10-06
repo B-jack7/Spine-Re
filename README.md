@@ -1,5 +1,7 @@
 # Spine-Re · J-Unet 脊柱 MRI 分割
 
+**简体中文** | [English](README.en.md)
+
 基于 PyTorch 的二维 MRI 图像分割项目，使用 J-Unet 将图像分为背景、椎体和椎间盘三类。提供 Google Colab 快速运行、按需加载 PNG、分段训练、Drive 断点保存和可核查的评估输出。
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/B-jack7/Spine-Re/blob/main/notebooks/Spine_Re_Quickstart.ipynb)
